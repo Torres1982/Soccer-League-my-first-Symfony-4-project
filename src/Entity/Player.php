@@ -27,7 +27,7 @@ class Player
     /**
      * @ORM\Column(type="string")
      */
-    private $firstName;
+    private $first_name;
 
     /**
      * @ORM\Column(type="string")
@@ -47,25 +47,25 @@ class Player
     /**
      * @ORM\Column(type="string")
      */
-    private $clubName;
+    private $club_name;
 
-    /**
-     * Player constructor.
-     * @param $id
-     * @param $firstName
-     * @param $surname
-     * @param $age
-     * @param $nationality
-     * @param $clubName
-     */
-    public function __construct($id, $firstName, $surname, $age, $nationality, $clubName) {
-        $this->id = $id;
-        $this->firstName = $firstName;
-        $this->surname = $surname;
-        $this->age = $age;
-        $this->nationality = $nationality;
-        $this->clubName = $clubName;
-    }
+//    /**
+//     * Player constructor.
+//     * @param $id
+//     * @param $first_name
+//     * @param $surname
+//     * @param $age
+//     * @param $nationality
+//     * @param $club_name
+//     */
+//    public function __construct($id, $first_name, $surname, $age, $nationality, $club_name) {
+//        $this->id = $id;
+//        $this->first_name = $first_name;
+//        $this->surname = $surname;
+//        $this->age = $age;
+//        $this->nationality = $nationality;
+//        $this->club_name = $club_name;
+//    }
 
     /**
      * @return mixed
@@ -88,15 +88,15 @@ class Player
      */
     public function getFirstName()
     {
-        return $this->firstName;
+        return $this->first_name;
     }
 
     /**
-     * @param mixed $firstName
+     * @param mixed $first_name
      */
-    public function setFirstName($firstName): void
+    public function setFirstName($first_name): void
     {
-        $this->firstName = $firstName;
+        $this->first_name = $first_name;
     }
 
     /**
@@ -152,15 +152,15 @@ class Player
      */
     public function getClubName()
     {
-        return $this->clubName;
+        return $this->club_name;
     }
 
     /**
-     * @param mixed $clubName
+     * @param $club_name
      */
-    public function setClubName($clubName): void
+    public function setClubName($club_name): void
     {
-        $this->clubName = $clubName;
+        $this->club_name = $club_name;
     }
 
 
