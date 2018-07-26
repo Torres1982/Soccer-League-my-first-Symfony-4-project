@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} List of Players {% endblock %}
+
+{% block body %}
+    <h1> List of Players: </h1>
+
+    <ul>
+        {% for player in players %}
+            <li>
+                {#Id: {{ player.id }} <br>#}
+                {#Name: #}
+                <a href="{{ url('player_show', {id: player.id}) }}"> {{ player.firstName }} {{ player.surname }} </a> <br>
+                {#Age: {{ player.age }} <br>#}
+                {#Nationality: {{ player.nationality }} <br>#}
+                {#Club: {{ player.clubName }} <br>#}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

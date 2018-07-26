@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Player Page {% endblock %}
+
+{% block body %}
+    <h1> Show Player Info: </h1>
+
+    <p>
+        Id: {{ player.id }} <br>
+        Name: {{ player.firstName }} {{ player.surname }} <br>
+        Age: {{ player.age }} <br>
+        Nationality: {{ player.nationality }} <br>
+        Club: {{ player.clubName }} <br>
+        <a href="{{ url('player_list') }}"> Go Back </a>
+    </p>
+{% endblock %}
