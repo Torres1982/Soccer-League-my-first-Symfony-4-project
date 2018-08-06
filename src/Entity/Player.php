@@ -49,24 +49,9 @@ class Player
      */
     private $club_name;
 
-//    /**
-//     * Player constructor.
-//     * @param $id
-//     * @param $first_name
-//     * @param $surname
-//     * @param $age
-//     * @param $nationality
-//     * @param $club_name
-//     */
-//    public function __construct($id, $first_name, $surname, $age, $nationality, $club_name) {
-//        $this->id = $id;
-//        $this->first_name = $first_name;
-//        $this->surname = $surname;
-//        $this->age = $age;
-//        $this->nationality = $nationality;
-//        $this->club_name = $club_name;
-//    }
-
+    // *****************************************************************
+    //                      Getters and Setters
+    // *****************************************************************
     /**
      * @return mixed
      */
