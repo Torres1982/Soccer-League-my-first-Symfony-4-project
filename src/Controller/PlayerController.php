@@ -13,13 +13,29 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class PlayerController extends Controller
 {
     /**
+     * It lists details of the one selected Player
      * @Route("/player/{id}", name="player_show")
-     * @param $id
+     * @param Player $player
      * @return Response
      */
-    public function showAction($id) {
-        $em = $this->getDoctrine()->getManager();
-        $player = $em->getRepository('App:Player')->find($id);
+//    public function showAction($id) {
+//        $em = $this->getDoctrine()->getManager();
+//        $player = $em->getRepository('App:Player')->find($id);
+//
+//        $template = 'player/show.html.twig';
+//        $args = [
+//            'player' => $player
+//        ];
+//
+//        if (!$player) {
+//            $template = 'error/404.html.twig';
+//        }
+//
+//        return $this->render($template, $args);
+//    }
+    public function showAction(Player $player) {
+        //$em = $this->getDoctrine()->getManager();
+        //$player = $em->getRepository('App:Player')->find($id);
 
         $template = 'player/show.html.twig';
         $args = [
@@ -34,7 +50,10 @@ class PlayerController extends Controller
     }
 
     /**
+     * It shows the list of all Players
      * @Route("/player", name="player_list")
+     * @param Player $players
+     * @return Response
      */
     public function listAction() {
         $em = $this->getDoctrine()->getManager();
@@ -53,6 +72,7 @@ class PlayerController extends Controller
     }
 
     /**
+     * It removes a Player by given id
      * @param $id
      * @Route("/player/delete/{id}", name="player_delete")
      * @return Response
@@ -69,6 +89,7 @@ class PlayerController extends Controller
     }
 
     /**
+     * It creates a new Player
      * @Route("/create", name="player_create")
      * @return Response
      */
