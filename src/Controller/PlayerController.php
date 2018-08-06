@@ -12,6 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PlayerController extends Controller
 {
+
     /**
      * It lists details of the one selected Player
      * @Route("/player/{id}", name="player_show")
@@ -51,8 +52,7 @@ class PlayerController extends Controller
 
     /**
      * It shows the list of all Players
-     * @Route("/player", name="player_list")
-     * @param Player $players
+     * @Route("/players", name="players_list")
      * @return Response
      */
     public function listAction() {
@@ -105,7 +105,7 @@ class PlayerController extends Controller
         $em->persist($player);
         $em->flush();
 
-        return $this->redirectToRoute('player_list');
+        return $this->redirectToRoute('players_list');
         //return $this->redirectToRoute('player_show', ['id' => $player->getId()]);
         //return new Response('New Player with id ' . $player->getId() . ' successfully created!');
     }
