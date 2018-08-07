@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Add New Player {% endblock %}
+
+{% block body %}
+    <h1> Create New Player </h1>
+
+    <form action="/player/createNewPlayer" method="POST">
+        <p>
+            <label for="playerFirstName">
+                First Name: <input type="text" id="playerFirstName" name="playerFirstName">
+            </label>
+        </p>
+        <p>
+            <label for="playerSurname">
+                Surname: <input type="text" id="playerSurname" name="playerSurname">
+            </label>
+        </p>
+        <p>
+            <label for="playerAge">
+                Age: <input type="number" min="16" max="45" id="playerAge" name="playerAge">
+            </label>
+        </p>
+        <p>
+            <label for="playerNationality">
+                Nationality: <input type="text" id="playerNationality" name="playerNationality">
+            </label>
+        </p>
+        <p>
+            <label for="playerClub">
+                Club: <input type="text" id="playerClub" name="playerClub">
+            </label>
+        </p>
+        <br>
+        <input type="submit" value="Create New Student">
+    </form>
+{% endblock %}

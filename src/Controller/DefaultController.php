@@ -11,7 +11,7 @@ class DefaultController extends Controller
      * @Route("/", name="homepage")
      */
     public function indexAction() {
-        $template = 'default/homepage.html.twig';
+        $template = 'default/index.html.twig';
         $args = [
             'name' => 'Artur Torres'
         ];

@@ -109,4 +109,14 @@ class PlayerController extends Controller
         //return $this->redirectToRoute('player_show', ['id' => $player->getId()]);
         //return new Response('New Player with id ' . $player->getId() . ' successfully created!');
     }
+
+    /**
+     * @Route("/player_new", name="player_create_new")
+     */
+    public function createNewPlayerAction() {
+        $args_array = [];
+        $template = 'player/newPlayer.html.twig';
+
+        return $this->render($template, $args_array);
+    }
 }

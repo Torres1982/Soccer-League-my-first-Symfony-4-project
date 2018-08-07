@@ -20,7 +20,7 @@ class LoadPlayers extends Fixture {
         $numberOfPlayers = 15;
 
         for ($i = 0; $i < $numberOfPlayers; $i++) {
-            $firstName = $faker->firstName;
+            $firstName = $faker->firstNameMale;
             $surname = $faker->lastName;
             $age = $faker->numberBetween(18, 42);
             $nationality = $faker->country;
