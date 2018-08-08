@@ -2,9 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+            @import '/public/css/flash.css';
+        </style>
         {% block stylesheets %}{% endblock %}
     </head>
+
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
