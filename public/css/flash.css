@@ -1,6 +1,6 @@
-.flash_error {
+.flash-error-style {
     color: #f9ecec;
     background-color: #C82829;
-    padding: 2em;
-    margin: 2em;
+    padding: 10px;
+    margin: 10px;
 }

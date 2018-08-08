@@ -5,6 +5,13 @@
 {% block body %}
     <h1> Create New Player </h1>
 
+    {# ************************* Add Flash Error Message ************************* #}
+    {% for flash_error_message in app.session.flashBag.get('error') %}
+        <div class="flash-error-style">
+            {{ flash_error_message }}
+        </div>
+    {% endfor %}
+
     <form action="/player/processCreateNewPlayer" method="POST">
         <p>
             <label for="playerFirstName">

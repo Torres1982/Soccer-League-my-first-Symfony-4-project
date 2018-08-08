@@ -16,8 +16,10 @@ class PlayerController extends Controller
     /**
      * Redirects to the form in order to create a new Player
      * @Route("/player/createNewPlayer", name="player_create_new")
+     * @param Request $request
+     * @return Response
      */
-    public function createNewPlayerAction() {
+    public function createNewPlayerAction(Request $request) {
         $args_array = [];
         $template = 'player/newPlayer.html.twig';
 
@@ -65,6 +67,15 @@ class PlayerController extends Controller
         $nationality = $request->request->get('playerNationality');
         $clubName = $request->request->get('playerClubName');
 
+        if (empty($firstName) || empty($surname) || empty($age) || empty($nationality) || empty($clubName)) {
+            $this->addFlash(
+              'error',
+              'All fields must be filled in!'
+            );
+            //return $this->createNewPlayerAction($request);
+            return $this->redirectToRoute('player_create_new');
+        }
+
         return $this->createAction($firstName, $surname, $age, $nationality, $clubName);
     }
 
@@ -107,7 +118,7 @@ class PlayerController extends Controller
 
     /**
      * It shows the list of all Players
-     * @Route("/player", name="players_list")
+     * @Route("/players", name="players_list")
      * @return Response
      */
     public function listAction() {
