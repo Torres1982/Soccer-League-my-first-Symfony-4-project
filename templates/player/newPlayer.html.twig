@@ -5,7 +5,7 @@
 {% block body %}
     <h1> Create New Player </h1>
 
-    <form action="/player/createNewPlayer" method="POST">
+    <form action="/player/processCreateNewPlayer" method="POST">
         <p>
             <label for="playerFirstName">
                 First Name: <input type="text" id="playerFirstName" name="playerFirstName">
@@ -28,7 +28,7 @@
         </p>
         <p>
             <label for="playerClub">
-                Club: <input type="text" id="playerClub" name="playerClub">
+                Club: <input type="text" id="playerClubName" name="playerClubName">
             </label>
         </p>
         <br>
