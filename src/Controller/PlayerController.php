@@ -18,8 +18,14 @@ class PlayerController extends Controller
      * @return Response
      */
     public function createNewPlayerAction() {
-        $args_array = [];
         $template = 'player/newPlayer.html.twig';
+        $args_array = [
+            'firstName' => '',
+            'surname' => '',
+            'age' => '',
+            'nationality' => '',
+            'clubName' => ''
+        ];
 
         return $this->render($template, $args_array);
     }
@@ -53,7 +59,7 @@ class PlayerController extends Controller
 
     /**
      * It handles the creation of a new Player
-     * @Route("player/processCreateNewPlayer", name="process__player_create_new")
+     * @Route("player/processCreateNewPlayer", name="process__player_create_new", methods={"POST", "GET"})
      * @param Request $request
      * @return Response
      */
@@ -65,13 +71,26 @@ class PlayerController extends Controller
         $nationality = $request->request->get('playerNationality');
         $clubName = $request->request->get('playerClubName');
 
-        if (empty($firstName) || empty($surname) || empty($age) || empty($nationality) || empty($clubName)) {
+        $isFormSent = $request->isMethod('POST');
+
+        if ($isFormSent && (empty($firstName) || empty($surname) || empty($age) || empty($nationality) || empty($clubName))) {
             $this->addFlash(
               'error',
               'All fields must be filled in!'
             );
-            //return $this->createNewPlayerAction($request);
-            return $this->redirectToRoute('player_create_new');
+
+            //return $this->redirectToRoute('player_create_new');
+
+            $template = 'player/newPlayer.html.twig';
+            $argsArray = [
+              'firstName' => $firstName,
+              'surname' => $surname,
+              'age' => $age,
+              'nationality' => $nationality,
+              'clubName' => $clubName
+            ];
+
+            return $this->render($template, $argsArray);
         }
 
         return $this->createAction($firstName, $surname, $age, $nationality, $clubName);

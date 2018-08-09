@@ -15,27 +15,27 @@
     <form action="/player/processCreateNewPlayer" method="POST">
         <p>
             <label for="playerFirstName">
-                First Name: <input type="text" class="player-first-name" id="playerFirstName" name="playerFirstName">
+                <span class="player-column-width"> First Name: </span> <input type="text" class="player-first-name" id="playerFirstName" name="playerFirstName" value="{{ firstName }}">
             </label>
         </p>
         <p>
             <label for="playerSurname">
-                Surname: <input type="text" class="player-surname" id="playerSurname" name="playerSurname">
+                <span class="player-column-width"> Surname: </span> <input type="text" class="player-surname" id="playerSurname" name="playerSurname" value="{{ surname }}">
             </label>
         </p>
         <p>
             <label for="playerAge">
-                Age: <input type="number" min="16" max="45" class="player-age" id="playerAge" name="playerAge">
+                <span class="player-column-width"> Age: </span> <input type="number" min="16" max="45" class="player-age" id="playerAge" name="playerAge" value="{{ age }}">
             </label>
         </p>
         <p>
             <label for="playerNationality">
-                Nationality: <input type="text" class="player-nationality" id="playerNationality" name="playerNationality">
+                <span class="player-column-width"> Nationality: </span> <input type="text" class="player-nationality" id="playerNationality" name="playerNationality" value="{{ nationality }}">
             </label>
         </p>
         <p>
             <label for="playerClub">
-                Club: <input type="text" class="player-club-name" id="playerClubName" name="playerClubName">
+                <span class="player-column-width"> Club: </span> <input type="text" class="player-club-name" id="playerClubName" name="playerClubName" value="{{ clubName }}">
             </label>
         </p>
         <br>

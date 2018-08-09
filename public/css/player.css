@@ -6,3 +6,8 @@
 .player-club-name {
     background-color: #ffcc00;
 }
+
+.player-column-width {
+    display: inline-block;
+    width: 12vmax;
+}
