@@ -1,0 +1,8 @@
+/*************** Creating a new Player twig page ***************/
+.player-first-name,
+.player-surname,
+.player-age,
+.player-nationality,
+.player-club-name {
+    background-color: #ffcc00;
+}

@@ -1,6 +1,14 @@
+/*************** Style for Flash Error Messages ***************/
 .flash-error-style {
     color: #f9ecec;
     background-color: #C82829;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*************** Style for Flash Success Messages ***************/
+.flash-success-style {
+    background-color: lawngreen;
     padding: 10px;
     margin: 10px;
 }

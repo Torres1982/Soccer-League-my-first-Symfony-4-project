@@ -1,41 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Add New Player {% endblock %}
+{% block title %} Create New Player {% endblock %}
+
+{% block stylesheets %}
+    <link href="/css/player.css" rel="stylesheet">
+{% endblock %}
 
 {% block body %}
     <h1> Create New Player </h1>
 
     {# ************************* Add Flash Error Message ************************* #}
-    {% for flash_error_message in app.session.flashBag.get('error') %}
-        <div class="flash-error-style">
-            {{ flash_error_message }}
-        </div>
-    {% endfor %}
+    {% include '/flashErrorMessage.html.twig' %}
 
     <form action="/player/processCreateNewPlayer" method="POST">
         <p>
             <label for="playerFirstName">
-                First Name: <input type="text" id="playerFirstName" name="playerFirstName">
+                First Name: <input type="text" class="player-first-name" id="playerFirstName" name="playerFirstName">
             </label>
         </p>
         <p>
             <label for="playerSurname">
-                Surname: <input type="text" id="playerSurname" name="playerSurname">
+                Surname: <input type="text" class="player-surname" id="playerSurname" name="playerSurname">
             </label>
         </p>
         <p>
             <label for="playerAge">
-                Age: <input type="number" min="16" max="45" id="playerAge" name="playerAge">
+                Age: <input type="number" min="16" max="45" class="player-age" id="playerAge" name="playerAge">
             </label>
         </p>
         <p>
             <label for="playerNationality">
-                Nationality: <input type="text" id="playerNationality" name="playerNationality">
+                Nationality: <input type="text" class="player-nationality" id="playerNationality" name="playerNationality">
             </label>
         </p>
         <p>
             <label for="playerClub">
-                Club: <input type="text" id="playerClubName" name="playerClubName">
+                Club: <input type="text" class="player-club-name" id="playerClubName" name="playerClubName">
             </label>
         </p>
         <br>

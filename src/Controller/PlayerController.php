@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Entity\Player;
 use App\Repository\PlayerRepository;
 use Doctrine\ORM\EntityManager;
-//use http\Env\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,10 +15,9 @@ class PlayerController extends Controller
     /**
      * Redirects to the form in order to create a new Player
      * @Route("/player/createNewPlayer", name="player_create_new")
-     * @param Request $request
      * @return Response
      */
-    public function createNewPlayerAction(Request $request) {
+    public function createNewPlayerAction() {
         $args_array = [];
         $template = 'player/newPlayer.html.twig';
 
