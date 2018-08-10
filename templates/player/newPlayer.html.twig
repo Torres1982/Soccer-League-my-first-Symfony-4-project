@@ -9,36 +9,68 @@
 {% block body %}
     <h1> Create New Player </h1>
 
-    {# ************************* Add Flash Error Message ************************* #}
-    {% include '/flashErrorMessage.html.twig' %}
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div>
+            {{ form_label(form.first_name, 'First Name:', {'label_attr': {'class': 'player-column-width'}}) }}
+            {{ form_errors(form.first_name) }}
+            {{ form_widget(form.first_name, {'attr': {'class': 'player-first-name'}}) }}
+        </div>
+        <div>
+            {{ form_label(form.surname, 'Surname:', {'label_attr': {'class': 'player-column-width'}}) }}
+            {{ form_errors(form.surname) }}
+            {{ form_widget(form.surname, {'attr': {'class': 'player-surname'}}) }}
+        </div>
+        <div>
+            {{ form_label(form.age, 'Age:', {'label_attr': {'class': 'player-column-width'}}) }}
+            {{ form_errors(form.age) }}
+            {{ form_widget(form.age, {'attr': {'class': 'player-age'}}) }}
+        </div>
+        <div>
+            {{ form_label(form.nationality, 'Nationality:', {'label_attr': {'class': 'player-column-width'}}) }}
+            {{ form_errors(form.nationality) }}
+            {{ form_widget(form.nationality, {'attr': {'class': 'player-nationality'}}) }}
+        </div>
+        <div>
+            {{ form_label(form.club_name, 'Club Name:', {'label_attr': {'class': 'player-column-width'}}) }}
+            {{ form_errors(form.club_name) }}
+            {{ form_widget(form.club_name, {'attr': {'class': 'player-club-name'}}) }}
+        </div>
+        <div>
+            {{ form_widget(form.submit) }}
+        </div>
+    {{ form_end(form) }}
 
-    <form action="/player/processCreateNewPlayer" method="POST">
-        <p>
-            <label for="playerFirstName">
-                <span class="player-column-width"> First Name: </span> <input type="text" class="player-first-name" id="playerFirstName" name="playerFirstName" value="{{ firstName }}">
-            </label>
-        </p>
-        <p>
-            <label for="playerSurname">
-                <span class="player-column-width"> Surname: </span> <input type="text" class="player-surname" id="playerSurname" name="playerSurname" value="{{ surname }}">
-            </label>
-        </p>
-        <p>
-            <label for="playerAge">
-                <span class="player-column-width"> Age: </span> <input type="number" min="16" max="45" class="player-age" id="playerAge" name="playerAge" value="{{ age }}">
-            </label>
-        </p>
-        <p>
-            <label for="playerNationality">
-                <span class="player-column-width"> Nationality: </span> <input type="text" class="player-nationality" id="playerNationality" name="playerNationality" value="{{ nationality }}">
-            </label>
-        </p>
-        <p>
-            <label for="playerClub">
-                <span class="player-column-width"> Club: </span> <input type="text" class="player-club-name" id="playerClubName" name="playerClubName" value="{{ clubName }}">
-            </label>
-        </p>
-        <br>
-        <input type="submit" value="Create New Student">
-    </form>
+    {# ************************* Add Flash Error Message ************************* #}
+    {#{% include '/flashErrorMessage.html.twig' %}#}
+
+    {#<form action="/player/processCreateNewPlayer" method="POST">#}
+        {#<p>#}
+            {#<label for="playerFirstName">#}
+                {#<span class="player-column-width"> First Name: </span> <input type="text" class="player-first-name" id="playerFirstName" name="playerFirstName" value="{{ firstName }}">#}
+            {#</label>#}
+        {#</p>#}
+        {#<p>#}
+            {#<label for="playerSurname">#}
+                {#<span class="player-column-width"> Surname: </span> <input type="text" class="player-surname" id="playerSurname" name="playerSurname" value="{{ surname }}">#}
+            {#</label>#}
+        {#</p>#}
+        {#<p>#}
+            {#<label for="playerAge">#}
+                {#<span class="player-column-width"> Age: </span> <input type="number" min="16" max="45" class="player-age" id="playerAge" name="playerAge" value="{{ age }}">#}
+            {#</label>#}
+        {#</p>#}
+        {#<p>#}
+            {#<label for="playerNationality">#}
+                {#<span class="player-column-width"> Nationality: </span> <input type="text" class="player-nationality" id="playerNationality" name="playerNationality" value="{{ nationality }}">#}
+            {#</label>#}
+        {#</p>#}
+        {#<p>#}
+            {#<label for="playerClub">#}
+                {#<span class="player-column-width"> Club: </span> <input type="text" class="player-club-name" id="playerClubName" name="playerClubName" value="{{ clubName }}">#}
+            {#</label>#}
+        {#</p>#}
+        {#<br>#}
+        {#<input type="submit" value="Create New Student">#}
+    {#</form>#}
 {% endblock %}

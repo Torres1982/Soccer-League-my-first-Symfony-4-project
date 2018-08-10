@@ -9,6 +9,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Class Player
@@ -26,26 +27,36 @@ class Player
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank()
+     * @Assert\Type("string")
      */
     private $first_name;
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank()
+     * @Assert\Type("string")
      */
     private $surname;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank()
+     * @Assert\Type("integer")
      */
     private $age;
 
     /**
      * @ORM\Column(type="string")
+     * $Assert\NotBlank()
+     * @Assert\Type("string")
      */
     private $nationality;
 
     /**
      * @ORM\Column(type="string")
+     * @Assert\NotBlank()
+     * @Assert\Type("string")
      */
     private $club_name;
 

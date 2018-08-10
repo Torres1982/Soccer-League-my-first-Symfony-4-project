@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Player;
+use App\Form\PlayerType;
 use App\Repository\PlayerRepository;
 use Doctrine\ORM\EntityManager;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,13 +19,18 @@ class PlayerController extends Controller
      * @return Response
      */
     public function createNewPlayerAction() {
+        $player = new Player();
+
+        $form = $this->createForm(PlayerType::class, $player)->createView();
+
         $template = 'player/newPlayer.html.twig';
         $args_array = [
-            'firstName' => '',
-            'surname' => '',
-            'age' => '',
-            'nationality' => '',
-            'clubName' => ''
+            'form' => $form
+//            'firstName' => '',
+//            'surname' => '',
+//            'age' => '',
+//            'nationality' => '',
+//            'clubName' => ''
         ];
 
         return $this->render($template, $args_array);
@@ -64,36 +70,51 @@ class PlayerController extends Controller
      * @return Response
      */
     public function processCreateNewPlayerAction(Request $request) {
-        // Retrieve values from the HTTP POST data (from user form)
-        $firstName = $request->request->get('playerFirstName');
-        $surname = $request->request->get('playerSurname');
-        $age = $request->request->get('playerAge');
-        $nationality = $request->request->get('playerNationality');
-        $clubName = $request->request->get('playerClubName');
+//        // Retrieve values from the HTTP POST data (from user form)
+//        $firstName = $request->request->get('playerFirstName');
+//        $surname = $request->request->get('playerSurname');
+//        $age = $request->request->get('playerAge');
+//        $nationality = $request->request->get('playerNationality');
+//        $clubName = $request->request->get('playerClubName');
+//
+//        $isFormSent = $request->isMethod('POST');
+//
+//        if ($isFormSent && (empty($firstName) || empty($surname) || empty($age) || empty($nationality) || empty($clubName))) {
+//            $this->addFlash(
+//              'error',
+//              'All fields must be filled in!'
+//            );
+//
+//            //return $this->redirectToRoute('player_create_new');
+//
+//            $template = 'player/newPlayer.html.twig';
+//            $argsArray = [
+//              'firstName' => $firstName,
+//              'surname' => $surname,
+//              'age' => $age,
+//              'nationality' => $nationality,
+//              'clubName' => $clubName
+//            ];
+//
+//            return $this->render($template, $argsArray);
+//        }
+//
+//        return $this->createAction($firstName, $surname, $age, $nationality, $clubName);
+        $player = new Player();
 
-        $isFormSent = $request->isMethod('POST');
+        $form = $this->createForm(PlayerType::class, $player);
+        $form->handleRequest($request);
 
-        if ($isFormSent && (empty($firstName) || empty($surname) || empty($age) || empty($nationality) || empty($clubName))) {
-            $this->addFlash(
-              'error',
-              'All fields must be filled in!'
-            );
-
-            //return $this->redirectToRoute('player_create_new');
-
-            $template = 'player/newPlayer.html.twig';
-            $argsArray = [
-              'firstName' => $firstName,
-              'surname' => $surname,
-              'age' => $age,
-              'nationality' => $nationality,
-              'clubName' => $clubName
-            ];
-
-            return $this->render($template, $argsArray);
+        if ($form->isSubmitted() && $form->isValid()) {
+            return $this->createAction($player->getFirstName(), $player->getSurname(), $player->getAge(), $player->getNationality(), $player->getClubName());
         }
 
-        return $this->createAction($firstName, $surname, $age, $nationality, $clubName);
+        $template = 'player/newPlayer.html.twig';
+        $argsArray = [
+          'form' => $form->createView()
+        ];
+
+        return $this->render($template, $argsArray);
     }
 
     /**
