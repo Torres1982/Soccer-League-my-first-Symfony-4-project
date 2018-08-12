@@ -66,7 +66,7 @@ class PlayerController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function processCreateNewPlayerAction(Request $request) {
+    public function createNewPlayerAction(Request $request) {
 //        // Retrieve values from the HTTP POST data (from user form)
 //        $firstName = $request->request->get('playerFirstName');
 //        $surname = $request->request->get('playerSurname');

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ecebb-623a-4029-b4af-43aa4f2dd3c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlayerController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="PlayerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/PlayerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="97" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
+            <state relative-caret-position="119">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#34#56#0#PHP" expanded="true" />
               </folding>
@@ -131,8 +130,8 @@
         <option value="$PROJECT_DIR$/public/css/player.css" />
         <option value="$PROJECT_DIR$/src/Form/PlayerType.php" />
         <option value="$PROJECT_DIR$/templates/player/newPlayer.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/PlayerController.php" />
         <option value="$PROJECT_DIR$/templates/player/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/PlayerController.php" />
       </list>
     </option>
   </component>
@@ -400,12 +399,12 @@
       <workItem from="1533826574109" duration="6007000" />
       <workItem from="1533918599162" duration="9257000" />
       <workItem from="1533989305611" duration="2372000" />
-      <workItem from="1534077714382" duration="3085000" />
+      <workItem from="1534077714382" duration="3590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76362000" />
+    <option name="totallyTimeSpent" value="76867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="103" width="1540" height="760" extended-state="0" />
@@ -804,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PlayerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="97" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
+        <state relative-caret-position="119">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#34#56#0#PHP" expanded="true" />
           </folding>
