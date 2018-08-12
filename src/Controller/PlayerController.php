@@ -13,51 +13,48 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PlayerController extends Controller
 {
-    /**
-     * Redirects to the form in order to create a new Player
-     * @Route("/player/createNewPlayer", name="player_create_new")
-     * @return Response
-     */
-    public function createNewPlayerAction() {
-        $player = new Player();
-
-        $form = $this->createForm(PlayerType::class, $player)->createView();
-
-        $template = 'player/newPlayer.html.twig';
-        $args_array = [
-            'form' => $form
-//            'firstName' => '',
-//            'surname' => '',
-//            'age' => '',
-//            'nationality' => '',
-//            'clubName' => ''
-        ];
-
-        return $this->render($template, $args_array);
-    }
+//    /**
+//     * Redirects to the form in order to create a new Player
+//     * @Route("/player/createNewPlayer", name="player_create_new")
+//     * @return Response
+//     */
+//    public function createNewPlayerAction() {
+//        $player = new Player();
+//
+//        $form = $this->createForm(PlayerType::class, $player);
+//
+//        $template = 'player/newPlayer.html.twig';
+//        $args_array = [
+//            'form' => $form->createView()
+////            'firstName' => '',
+////            'surname' => '',
+////            'age' => '',
+////            'nationality' => '',
+////            'clubName' => ''
+//        ];
+//
+//        return $this->render($template, $args_array);
+//    }
 
     /**
      * It inserts a new Player to the DB
      * @Route("player/create", name="player_create")
-     * @param $firstName
-     * @param $surname
-     * @param $age
-     * @param $nationality
-     * @param $clubName
+     * @param $player
      * @return Response
      */
-    public function createAction($firstName, $surname, $age, $nationality, $clubName) {
-        $player = new Player();
-        $player->setFirstName($firstName);
-        $player->setSurname($surname);
-        $player->setAge($age);
-        $player->setNationality($nationality);
-        $player->setClubName($clubName);
+    public function createAction($player) {
+//        $player = new Player();
+//        $player->setFirstName($firstName);
+//        $player->setSurname($surname);
+//        $player->setAge($age);
+//        $player->setNationality($nationality);
+//        $player->setClubName($clubName);
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($player);
         $em->flush();
 
+        //return $this->showAction($player);
         return $this->redirectToRoute('players_list');
         //return $this->redirectToRoute('player_show', ['id' => $player->getId()]);
         //return new Response('New Player with id ' . $player->getId() . ' successfully created!');
@@ -65,7 +62,7 @@ class PlayerController extends Controller
 
     /**
      * It handles the creation of a new Player
-     * @Route("player/processCreateNewPlayer", name="process__player_create_new", methods={"POST", "GET"})
+     * @Route("player/processCreateNewPlayer", name="player_create_new", methods={"POST", "GET"})
      * @param Request $request
      * @return Response
      */
@@ -106,7 +103,7 @@ class PlayerController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            return $this->createAction($player->getFirstName(), $player->getSurname(), $player->getAge(), $player->getNationality(), $player->getClubName());
+            return $this->createAction($player);
         }
 
         $template = 'player/newPlayer.html.twig';
