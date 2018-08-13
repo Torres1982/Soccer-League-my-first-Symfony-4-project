@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ecebb-623a-4029-b4af-43aa4f2dd3c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlayerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -239,7 +238,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
+    <option name="x" value="162" />
     <option name="y" value="17" />
     <option name="width" value="1783" />
     <option name="height" value="1032" />
@@ -425,12 +424,12 @@
       <workItem from="1533918599162" duration="9257000" />
       <workItem from="1533989305611" duration="2372000" />
       <workItem from="1534077714382" duration="4245000" />
-      <workItem from="1534201284191" duration="969000" />
+      <workItem from="1534201284191" duration="1511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78491000" />
+    <option name="totallyTimeSpent" value="79033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="102" y="14" width="1426" height="825" extended-state="0" />
