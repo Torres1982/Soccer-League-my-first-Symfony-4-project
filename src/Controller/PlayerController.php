@@ -189,5 +189,5 @@ class PlayerController extends Controller
         return new Response('Player with id ' . $id . ' successfully deleted!');
     }
 
-    
+
 }
