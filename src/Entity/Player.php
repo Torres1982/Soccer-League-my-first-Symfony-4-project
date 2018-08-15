@@ -158,6 +158,4 @@ class Player
     {
         $this->club_name = $club_name;
     }
-
-
 }
