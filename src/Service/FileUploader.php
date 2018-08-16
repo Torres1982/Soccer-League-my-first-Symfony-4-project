@@ -9,6 +9,8 @@
 namespace App\Service;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 class FileUploader
 {
@@ -23,13 +25,22 @@ class FileUploader
     }
 
     /**
-     * Handles upload of the Files
+     * Handles upload of the Files (excel files uploaded by Admin only)
      * @param UploadedFile $file
      * @return string
      */
     public function uploadFile(UploadedFile $file) {
-        $fileName = md5(uniqid()).'.'.$file->guessExtension();
-        $file->move($this->getFileDirectory(), $fileName);
+        $fileSystem = new Filesystem();
+        //$fileName = md5(uniqid()) . '.' . $file->guessExtension();
+        $fileName = $file->getClientOriginalName();
+
+        if ($fileSystem->exists($this->getFileDirectory())) {
+            try {
+                $file->move($this->getFileDirectory(), $fileName);
+            } catch (IOExceptionInterface $exception) {
+                echo 'Error occurred while loading the File!';
+            }
+        }
 
         return $fileName;
     }
