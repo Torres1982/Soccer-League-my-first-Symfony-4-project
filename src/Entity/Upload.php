@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\FileRepository")
  */
-class File
+class Upload
 {
     /**
      * @ORM\Id()
