@@ -8,7 +8,6 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Validator\Constraints\Count;
 use Symfony\Component\Validator\Constraints\File;
 
 class UploadType extends AbstractType
@@ -17,6 +16,7 @@ class UploadType extends AbstractType
     {
         $builder
             ->add('name', FileType::class, [
+                'label' => 'Your File: ',
                 'required' => true,
                 'constraints' => [
                     new File([
@@ -26,7 +26,7 @@ class UploadType extends AbstractType
                             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                             'application/vnd.oasis.opendocument.spreadsheet'
                         ],
-                        'mimeTypesMessage' => 'Please upload a valid excel file!',
+                        'mimeTypesMessage' => 'Please upload a valid Excel file!',
                     ])
                 ]
             ])
