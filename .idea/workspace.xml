@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14ecebb-623a-4029-b4af-43aa4f2dd3c2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Torres.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Torres.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UploadType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UploadType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlayerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/player/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/player/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/player/newPlayer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/player/newPlayer.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlayerController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/PlayerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3128">
-              <caret line="191" selection-start-line="191" selection-end-line="191" />
+            <state relative-caret-position="106">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
               <folding>
                 <element signature="e#34#56#0#PHP" expanded="true" />
               </folding>
@@ -32,7 +38,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="391">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#34#56#0#PHP" expanded="true" />
@@ -44,8 +50,8 @@
       <file leaf-file-name="FileUploader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Service/FileUploader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="340">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#114#169#0#PHP" expanded="true" />
               </folding>
@@ -65,8 +71,8 @@
       <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/player/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="378">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -74,7 +80,7 @@
       <file leaf-file-name="PlayerType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form/PlayerType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="225">
               <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
               <folding>
                 <element signature="e#28#50#0#PHP" expanded="true" />
@@ -86,17 +92,17 @@
       <file leaf-file-name="newPlayer.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/player/newPlayer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UploadType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form/UploadType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#28#50#0#PHP" expanded="true" />
               </folding>
@@ -105,6 +111,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -148,9 +161,6 @@
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/public/css/player.css" />
         <option value="$PROJECT_DIR$/src/Form/PlayerType.php" />
-        <option value="$PROJECT_DIR$/templates/player/list.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/PlayerController.php" />
-        <option value="$PROJECT_DIR$/templates/player/newPlayer.html.twig" />
         <option value="$PROJECT_DIR$/src/Service/FileUploder.php" />
         <option value="$PROJECT_DIR$/src/Kernel.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
@@ -162,6 +172,10 @@
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Service/FileUploader.php" />
         <option value="$PROJECT_DIR$/src/Form/UploadType.php" />
+        <option value="$PROJECT_DIR$/templates/player/newPlayer.html.twig" />
+        <option value="$PROJECT_DIR$/templates/player/list.html.twig" />
+        <option value="$PROJECT_DIR$/public/css/table.css" />
+        <option value="$PROJECT_DIR$/src/Controller/PlayerController.php" />
       </list>
     </option>
   </component>
@@ -268,9 +282,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="76" />
-    <option name="width" value="1850" />
+    <option name="x" value="126" />
+    <option name="y" value="51" />
+    <option name="width" value="1779" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -302,7 +316,20 @@
               <item name="soccerLeague" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerLeague" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerLeague" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerLeague" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerLeague" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerLeague" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soccerLeague" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +383,11 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="soccerLeague" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerLeague" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -377,6 +409,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -434,16 +467,19 @@
       <workItem from="1534433090072" duration="7527000" />
       <workItem from="1534458898454" duration="39000" />
       <workItem from="1534801773985" duration="9000" />
+      <workItem from="1540912960540" duration="2550000" />
+      <workItem from="1545142862573" duration="13189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101254000" />
+    <option name="totallyTimeSpent" value="116993000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="61" width="1480" height="800" extended-state="0" />
+    <frame x="44" y="41" width="1480" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15774648" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16197184" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32852563" />
@@ -476,20 +512,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Entity/Player.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/player/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -571,55 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/flash.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/flashErrorMessage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/flashSuccessMessage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/player.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/player/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/player/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/lib/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -669,20 +642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Player.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="e#113#145#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/FileRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/phpunit">
@@ -709,6 +669,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/uploads/files/php764D.tmp" />
+    <entry file="file://$PROJECT_DIR$/src/Entity/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -716,10 +686,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Upload.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Player.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="2363">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="e#113#145#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/FileUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#114#169#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/flash.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/flashErrorMessage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/UploadType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#28#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/flashSuccessMessage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/PlayerType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+          <folding>
+            <element signature="e#28#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#34#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/player.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -730,59 +788,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/PlayerType.php">
+    <entry file="file://$PROJECT_DIR$/templates/player/newPlayer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-          <folding>
-            <element signature="e#28#50#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PlayerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        <state relative-caret-position="106">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
           <folding>
             <element signature="e#34#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#34#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/player/newPlayer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/FileUploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#114#169#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/UploadType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#28#50#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

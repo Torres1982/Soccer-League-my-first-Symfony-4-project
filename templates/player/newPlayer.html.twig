@@ -8,6 +8,7 @@
 
 {% block body %}
     <h1> Create New Player </h1>
+    {#{% include '/flashErrorMessage.html.twig' %}#}
 
     {{ form_start(form) }}
         {{ form_errors(form) }}
@@ -40,6 +41,10 @@
             {{ form_widget(form.submit) }}
         </div>
     {{ form_end(form) }}
+
+    <p>
+        <a href="{{ url('players_list') }}"> Players List </a>
+    </p>
 
     {# ************************* Add Flash Error Message ************************* #}
     {#{% include '/flashErrorMessage.html.twig' %}#}

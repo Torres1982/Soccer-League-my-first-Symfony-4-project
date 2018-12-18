@@ -10,6 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 class PlayerController extends Controller
 {
@@ -105,6 +106,12 @@ class PlayerController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
             return $this->createAction($player);
         }
+//        elseif ($form->isSubmitted() && !$form->isValid()) {
+//            $this->addFlash(
+//                'error',
+//                'All fields must be filled in!'
+//            );
+//        }
 
         $template = 'player/newPlayer.html.twig';
         $argsArray = [
@@ -161,33 +168,59 @@ class PlayerController extends Controller
         $players = $em->getRepository('App:Player')->findAll();
 
         $template = 'player/list.html.twig';
-        $args = [
-          'players' => $players
-        ];
 
         if (!$players) {
             $template = 'error/404.html.twig';
         }
+
+//        $this->addFlash(
+//            'notice',
+//            'Player successfully deleted!'
+//        );
+
+        $args = [
+            'players' => $players,
+            'playerDeleted' => 'false'
+        ];
 
         return $this->render($template, $args);
     }
 
     /**
      * It removes a Player by given id
-     * @param $id
-     * @Route("/player/delete/{id}", name="player_delete")
+     * @param Player $player
      * @return Response
+     * @Route("/player/delete/{id}", name="player_delete")
+     * @Method("DELETE")
      */
-    public function deleteAction($id) {
-        $playerRepository = $this->getDoctrine()->getRepository('App:Player');
-        $player = $playerRepository->find($id);
+//    public function deleteAction($id) {
+//        $playerRepository = $this->getDoctrine()->getRepository('App:Player');
+//        $player = $playerRepository->find($id);
+//
+//        $em = $this->getDoctrine()->getManager();
+//        $em->remove($player);
+//        $em->flush();
+//
+//        return new Response('Player with id ' . $id . ' successfully deleted!');
+//    }
+      public function deleteAction(Player $player) {
 
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($player);
-        $em->flush();
+          $em = $this->getDoctrine()->getManager();
+//          $players = $em->getRepository('App:Player')->findAll();
+//          $playerId = $player->getId();
+          $em->remove($player);
+          $em->flush();
 
-        return new Response('Player with id ' . $id . ' successfully deleted!');
-    }
+//          $template = 'player/list.html.twig';
+//
+//          $args = [
+//              'players' => $players,
+//              'playerId' => $playerId,
+//              'playerDeleted' => 'true'
+//          ];
 
-
+          return $this->redirectToRoute('players_list');
+//          return $this->render($template, $args);
+//          return new Response('Player with an id ' . $playerId . ' successfully deleted!');
+      }
 }
